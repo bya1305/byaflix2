@@ -1,3 +1,58 @@
-.container {
-  
+.container-signup {
+  background-image: url(movie-collage.jpg);
+  width: 100vw;
+  height: 100vh;
+}
+.navbar-default {
+  background-color: hsla(0, 0%, 0%, .7);
+  border: none;
+  height: 8%;
+}
+#navbarname {
+  font-family: 'Lobster', cursive;
+  font-size: 4em;
+  color: red;
+}
+nav #name {
+  float: left;
+  margin-left: 5vw;
+}
+#navbarlink a {
+  color: red;
+  font-size: 2em;
+}
+nav #link {
+  padding-top: 15px;
+
+  float: right;
+  margin-right: 5vw;
+}
+.container-signup h2 {
+  text-align: center;
+}
+#flexbox {
+  display: flex;
+}
+#signup {
+  border-radius: 5px;
+  background-color: #F0F0F0;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 20px 40px;
+  margin-top: 25vh;
+  margin-bottom: 5vh;
+  border: 2px solid red;
+}
+#facebook_login {
+  padding: 5px 10px;
+  background-color: #3B5998;
+}
+#facebook_login a {
+  color: white;
+  padding-left: 10px;
+}
+#facebook_login img {
+  width: 20px;
+  height: 15px;
+  padding-right: 3px;
 }
