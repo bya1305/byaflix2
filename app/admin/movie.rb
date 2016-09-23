@@ -7,6 +7,14 @@ ActiveAdmin.register Movie do
       f.inputs "Movie" do
         f.input :title
         f.input :year
+        f.input :checked_out
+        f.input :reserved
+        f.input :description
+        f.input :img_url
+        f.input :rated
+        f.input :runtime
+        f.input :actors
+        f.input :imdb_rating
         f.input :genres, :as => :check_boxes
       end
       f.actions
