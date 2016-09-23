@@ -1,5 +1,7 @@
 .container-signup {
-  background-image: url(movie-collage.jpg);
+  background-image: url(movie-collage3.jpg);
+  background-position: center;
+  background-size: contain;
   width: 100vw;
   height: 100vh;
 }
@@ -22,8 +24,9 @@ nav #name {
   font-size: 2em;
 }
 nav #link {
-  padding-top: 15px;
-
+  padding: 5px 5px 0px;
+  border: 1px solid red;
+  margin-top: 10px;
   float: right;
   margin-right: 5vw;
 }
