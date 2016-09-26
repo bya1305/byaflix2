@@ -59,3 +59,17 @@ nav #link {
   height: 15px;
   padding-right: 3px;
 }
+
+body {
+  background-color: #141414;
+}
+
+.navbar-nav > li > .dropdown-menu {
+  margin-left: 40px;
+  background-color: #141414;
+  border: 1px solid red;
+}
+.navbar-nav > li > .dropdown-menu a {
+  color:white;
+  background-color: #141414;
+}

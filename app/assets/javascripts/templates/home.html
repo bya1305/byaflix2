@@ -1,0 +1,8 @@
+<ui-view>
+  <h1>Movies</h1>
+
+
+  <div ng-repeat="movie in ctrl.movies | filter:search track by movie.id">
+    <a ui-sref="home.show({id: movie.id})" class="ind_movie" ><img src="{{movie.img_url}}" alt=""></a>
+  </div>
+</ui-view>
