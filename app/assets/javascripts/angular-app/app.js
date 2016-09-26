@@ -15,18 +15,17 @@ angular
       .state('home.show', {
         url: '/:id',
         templateUrl: 'show.html',
-        controller: function ($scope, $stateParams, $http) {
-            $http.get('/api/movies/' + $stateParams.id)
-            .then(function (result) {
-                $scope.movie = result.data;
-                console.log(Auth.currentuser());
-            });
-          }
+        controller: 'IndMovieController as ctrl'
       })
       .state('help', {
         url: '/help',
         templateUrl: 'help.html',
         controller: 'HelpController as control'
+      })
+      .state('genre', {
+        url: '/genres/:id',
+        templateUrl: 'genreshow.html',
+        controller: 'GenreShowController'
       })
       $urlRouterProvider.otherwise('/movies');
   })

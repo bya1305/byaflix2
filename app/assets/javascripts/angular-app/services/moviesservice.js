@@ -1,10 +1,10 @@
 function MovieService($http,$stateParams) {
   this.getMovies = function() {
-      return $http.get('/api/movies.json');
+      return $http.get('/api/movies');
   };
 
   this.getMovie = function () {
-    return $http.get('/api/movies/' + $stateParams.id + '.json');
+    return $http.get('/api/movies/' + $stateParams.id);
   };
 
   this.editMovie = function(movie) {

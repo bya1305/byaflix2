@@ -1,12 +1,12 @@
-function IndMovieController($stateParams) {
+function IndMovieController($stateParams, MovieService) {
   var ctrl = this;
 
-function ($scope, $stateParams, $http) {
-    $http.get('/api/movies/' + $stateParams.id)
-    .then(function (result) {
-        $scope.movie = result.data;
-    });
-  }
+  MovieService
+    .getMovie()
+    .then(function(data) {
+      console.log(data)
+      ctrl.movie = data.data
+    })
 }
 
 

@@ -73,3 +73,57 @@ body {
   color:white;
   background-color: #141414;
 }
+
+
+/*======= Home Page ======== */
+
+.homelayoutdiv {
+  margin-top: 100px;
+  color:white;
+}
+.homelayoutdiv h1 {
+  margin-bottom: 50px;
+}
+.ind_movie img {
+  height: 400px;
+  width: 280px;
+  float: left;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  border-radius: 5%;
+}
+
+
+/*======== Show Page =======*/
+
+.indmoviecont {
+  margin-top: 80px;
+  background-color: #e0e0c5;
+  height: 90vh;
+  color: white;
+}
+.indmoviecont img {
+  height: 550px;
+}
+.moviediv {
+  float: left;
+  margin-right: 20px;
+  margin-top: 100px;
+}
+.movieinfo {
+  text-align: center;
+  margin-top: 100px;
+  color:black;
+}
+.movieinfo h1 {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.yearrating {
+  font-weight: bold;
+}
+.reservebutton {
+  width: 20%;
+  height:10%;
+  background-color: red;
+}

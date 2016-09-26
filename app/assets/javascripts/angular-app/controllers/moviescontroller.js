@@ -1,8 +1,12 @@
 
-function MoviesController(Movie, $state, $stateParams, $scope) {
+function MoviesController(MovieService, $state, $stateParams, $scope) {
   var ctrl = this;
 
-  ctrl.movies = Movie.query();
+  MovieService
+    .getMovies()
+    .then(function(data) {
+      ctrl.movies = data.data;
+    })
 };
 
 

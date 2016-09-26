@@ -1,8 +1,20 @@
 
+<div class="container indmoviecont">
+  <div class="moviediv">
+    <img src="{{ctrl.movie.img_url}}" alt="">
+  </div>
+  <div class="movieinfo">
+    <h1>{{ctrl.movie.title}}</h1>
+    <br>
+    <p class="yearrating">Year: {{ctrl.movie.year}} &emsp; &emsp; Rated: {{ctrl.movie.rated}}</p>
+    <br>
+    <p class="yearrating">Runtime: {{ctrl.movie.runtime}} &emsp; &emsp; IMDB Rating: {{ctrl.movie.imdb_rating}}</p>
+    <br>
+    <p><strong>Actors:</strong> {{ctrl.movie.actors}}</p>
+    <br><br>
+    <p><strong>Synopsis: </strong>{{ctrl.movie.description}}</p>
+    <br><br><br>
+    <button class="btn btn-primary reservebutton">Reserve</button>
+  </div>
 
-<br><br><br><br><br><br><br><br><br>
-
-<h1>{{movie.title}}</h1>
-<img src="{{movie.img_url}}" alt="">
-
-{{Auth._currentUser.email}}
+</div>
