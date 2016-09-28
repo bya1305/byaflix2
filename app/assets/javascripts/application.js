@@ -17,5 +17,6 @@
 //= require angular-resource
 //= require angular-rails-templates
 //= require AngularDevise
+//= require angularUtils-pagination
 //= require turbolinks
 //= require_tree .

@@ -14,7 +14,8 @@
     <br><br>
     <p><strong>Synopsis: </strong>{{ctrl.movie.description}}</p>
     <br><br><br>
-    <button class="btn btn-primary reservebutton">Reserve</button>
+    {{stock}}
+    <button class="btn btn-primary reservebutton" ng-click="stock='Not In Stock'">Reserve</button>
   </div>
 
 </div>

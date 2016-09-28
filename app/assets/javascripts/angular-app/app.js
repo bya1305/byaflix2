@@ -4,8 +4,6 @@ angular
 
     $httpProvider.defaults.withCredentials = true;
 
-
-
     $stateProvider
       .state('home', {
         url: '/movies',
@@ -20,18 +18,28 @@ angular
       .state('help', {
         url: '/help',
         templateUrl: 'help.html',
-        controller: 'HelpController as control'
+        controller: 'HelpController as ctrl'
       })
       .state('genre', {
         url: '/genres/:id',
         templateUrl: 'genreshow.html',
         controller: 'GenreShowController'
       })
+      .state('user', {
+        url: '/user',
+        templateUrl: 'user.html',
+        controller: 'UserController as ctrl'
+      })
       $urlRouterProvider.otherwise('/movies');
   })
-  .run(['Auth', function (Auth) {
-    Auth.currentUser().then(function(user) {
-      console.log(user);
-      console.log(Auth._currentUser);
+  .controller('myCtrl', function(Auth) {
+        var ctrl = this;
+        Auth.currentUser().then(function(user) {
+            // User was logged in, or Devise returned
+            // previously authenticated session.
+            ctrl.user = user.data;
+            console.log(user.email); // => {id: 1, ect: '...'}
+        }, function(error) {
+            // unauthenticated error
+        });
     });
-  }]);
