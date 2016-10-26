@@ -9,7 +9,7 @@ function IndMovieController($stateParams, MovieService) {
     })
 
   ctrl.reserve = function() {
-    console.log(this.movie.reserved);
+    stock = 'Not in Stock'
     this.movie.reserved = true;
     MovieService
       .editMovie(this)

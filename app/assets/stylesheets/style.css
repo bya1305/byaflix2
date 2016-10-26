@@ -106,9 +106,14 @@ body {
   height: 550px;
 }
 .moviediv {
+  z-index: -1;
   float: left;
   margin-right: 20px;
   margin-top: 100px;
+}
+.moviedivfilter {
+  z-index: 4;
+  background-color: gray;
 }
 .movieinfo {
   text-align: center;
@@ -127,19 +132,24 @@ body {
   height:10%;
   background-color: red;
 }
+.reservedtext p {
+  font-weight: bold;
+  font-size: 3em;
+  color: red;
+}
 
 /*======= Help Page/ User profile page ========*/
 
 .help_div {
   margin-top:80px;
-  background-color:#e0e0c5;
+  background-color:#f3f3f3;
   height: 100vh;
 }
 hr {
   border-color:black;
 }
 .ust {
-  margin-left: 15%;
+  /*margin-left: 15%;*/
   color: blue;
 }
 .editlink {
@@ -149,4 +159,15 @@ hr {
 }
 .info {
   margin-left: 65%;
+}
+.topic {
+  float:left;
+  margin-right: 15%;
+  margin-bottom: 5%;
+}
+.topicinfo {
+  float:left;
+  text-align: left;
+  margin-bottom: 5%;
+
 }

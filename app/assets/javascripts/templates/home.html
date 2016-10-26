@@ -2,9 +2,16 @@
   <div class="container-fluid homelayoutdiv">
     <h1>Movies</h1>
 
-    <div ng-repeat="movie in ctrl.movies | filter:search track by movie.id">
+    <div ng-repeat="movie in ctrl.movies | filter:search track by movie.id" ng-if="movie.reserved == false">
       <a ui-sref="home.show({id: movie.id})" class="ind_movie" ><img src="{{movie.img_url}}" alt=""></a>
     </div>
 
-</div>
+  </div>
+  <div class="container-fluid homelayoutdiv">
+    <h1>Out of Stock</h1>
+    <div ng-repeat="movie in ctrl.movies | filter:search track by movie.id" ng-if="movie.reserved == true">
+      <a ui-sref="home.show({id: movie.id})" class="ind_movie moviedivfilter" ><img src="{{movie.img_url}}" alt=""></a>
+    </div>
+
+  </div>
 </ui-view>

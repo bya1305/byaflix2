@@ -1,8 +1,15 @@
 <div class="container-fluid homelayoutdiv">
   <h1>{{genre.name}}</h1>
 
-  <div ng-repeat="movie in genre.movies">
+  <div ng-repeat="movie in genre.movies" ng-if="movie.reserved == false">
     <a ui-sref="home.show({id: movie.id})" class="ind_movie" ><img src="{{movie.img_url}}" alt=""></a>
+  </div>
+
+</div>
+<div class="container-fluid homelayoutdiv">
+  <h1>Out of Stock</h1>
+  <div ng-repeat="movie in genre.movies" ng-if="movie.reserved == true">
+    <a ui-sref="home.show({id: movie.id})" class="ind_movie moviedivfilter" ><img src="{{movie.img_url}}" alt=""></a>
   </div>
 
 </div>

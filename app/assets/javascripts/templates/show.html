@@ -1,6 +1,6 @@
 
 <div class="container indmoviecont">
-  <div class="moviediv">
+  <div class="moviedivfilter moviediv">
     <img src="{{ctrl.movie.img_url}}" alt="">
   </div>
   <div class="movieinfo">
@@ -14,7 +14,7 @@
     <br><br>
     <p><strong>Synopsis: </strong>{{ctrl.movie.description}}</p>
     <br><br><br>
-    {{stock}}
+    <div ng-if="ctrl.movie.reserved" class="reservedtext"><p>Not in Stock</p></div>
     <button class="btn btn-primary reservebutton" ng-click="ctrl.reserve()" ng-disabled="ctrl.movie.reserved == true">Reserve</button>
   </div>
 
