@@ -28,18 +28,7 @@ angular
       .state('user', {
         url: '/user',
         templateUrl: 'user.html',
-        controller: 'UserController as ctrl'
-      })
+        controller: 'UserController'
+      });
       $urlRouterProvider.otherwise('/movies');
-  })
-  .controller('myCtrl', function(Auth) {
-        var ctrl = this;
-        Auth.currentUser().then(function(user) {
-            // User was logged in, or Devise returned
-            // previously authenticated session.
-            ctrl.user = user.data;
-            console.log(user.email); // => {id: 1, ect: '...'}
-        }, function(error) {
-            // unauthenticated error
-        });
-    });
+  });

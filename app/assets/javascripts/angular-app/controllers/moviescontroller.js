@@ -5,7 +5,8 @@ function MoviesController(MovieService, $state, $stateParams, $scope) {
   MovieService
     .getMovies()
     .then(function(data) {
-      ctrl.movies = data.data;
+      console.log(data);
+      ctrl.movies = data.data.movies;
     })
 };
 

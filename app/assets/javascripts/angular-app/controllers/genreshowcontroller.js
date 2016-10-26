@@ -1,11 +1,11 @@
-function GenreShowController(GenresService, $stateParams) {
-  var ctrl = this;
+function GenreShowController(GenresService, $stateParams, $scope) {
+  // var ctrl = this;
 
   GenresService
     .getGenre()
     .then(function(data) {
       console.log(data)
-      ctrl.genre = data.data;
+      $scope.genre = data.data.genre;
     })
 }
 

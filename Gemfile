@@ -33,6 +33,8 @@ gem 'activeadmin', github: 'activeadmin'
 
 gem 'seed_dump'
 
+gem 'active_model_serializers'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

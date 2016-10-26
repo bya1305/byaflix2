@@ -5,8 +5,17 @@ function IndMovieController($stateParams, MovieService) {
     .getMovie()
     .then(function(data) {
       console.log(data)
-      ctrl.movie = data.data
+      ctrl.movie = data.data.movie;
     })
+
+  ctrl.reserve = function() {
+    console.log(this.movie.reserved);
+    this.movie.reserved = true;
+    MovieService
+      .editMovie(this)
+    console.log(this.movie);
+  };
+
 }
 
 

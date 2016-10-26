@@ -127,3 +127,26 @@ body {
   height:10%;
   background-color: red;
 }
+
+/*======= Help Page/ User profile page ========*/
+
+.help_div {
+  margin-top:80px;
+  background-color:#e0e0c5;
+  height: 100vh;
+}
+hr {
+  border-color:black;
+}
+.ust {
+  margin-left: 15%;
+  color: blue;
+}
+.editlink {
+  margin-left:95%;
+  font-size: 1.5em;
+  color: blue;
+}
+.info {
+  margin-left: 65%;
+}

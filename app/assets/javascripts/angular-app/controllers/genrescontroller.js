@@ -4,7 +4,7 @@ function GenresController(GenresService, $stateParams) {
   GenresService
     .getGenres()
     .then(function(data) {
-      ctrl.genres = data.data
+      ctrl.genres = data.data.genres
     })
 
   // ctrl.genres = Genre.query();
