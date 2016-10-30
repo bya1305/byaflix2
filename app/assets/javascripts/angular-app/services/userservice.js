@@ -1,5 +1,7 @@
-function UserService() {
-
+function UserService($http, $stateParams, Auth) {
+  this.edit = function(user) {
+    return $http.patch('/users', user);
+  }
 
 }
 

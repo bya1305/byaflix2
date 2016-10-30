@@ -1,0 +1,21 @@
+<div class="container help_div">
+  <h1>Edit</h1>
+  <form name="form" ng-submit="editUser()">
+    <label>Username: </label>
+    <input name="username" type="text" ng-model="user.username"> <br>
+
+    <!-- <div ng-messages="form.username.$error" ng-if="form.username.$touched">
+      <div ng-message="required">Username is required</div>
+    </div> -->
+
+    <label>Email: </label>
+    <input name="email" type="email" ng-model="user.email"> <br>
+
+    <!-- <div ng-messages="form.email.$error" ng-if="form.email.$touched">
+      <div ng-message="required">Email is required</div>
+    </div> -->
+
+
+    <input type="submit" value="Submit Changes">
+  </form>
+</div>

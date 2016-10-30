@@ -29,6 +29,11 @@ angular
         url: '/user',
         templateUrl: 'user.html',
         controller: 'UserController'
+      })
+      .state('edit', {
+        url: '/user/edit',
+        templateUrl: 'edit.html',
+        controller: 'UserController'
       });
       $urlRouterProvider.otherwise('/movies');
   });
