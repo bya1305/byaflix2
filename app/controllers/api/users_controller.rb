@@ -23,9 +23,9 @@ module Api
 
     private
       def user_params
-        params.require(:movie).permit(:username, :email)
+        params.require(:user).permit(:username, :email)
       end
 
-    
+
   end
 end

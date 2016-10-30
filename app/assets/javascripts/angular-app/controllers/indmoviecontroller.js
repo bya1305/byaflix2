@@ -1,19 +1,17 @@
 function IndMovieController($stateParams, MovieService) {
   var ctrl = this;
-
   MovieService
     .getMovie()
     .then(function(data) {
-      console.log(data)
       ctrl.movie = data.data.movie;
     })
 
+  console.log(ctrl)
   ctrl.reserve = function() {
     stock = 'Not in Stock'
     this.movie.reserved = true;
     MovieService
       .editMovie(this)
-    console.log(this.movie);
   };
 
 }

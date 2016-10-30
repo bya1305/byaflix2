@@ -22,7 +22,7 @@ module Api
 
     private
       def movie_params
-        params.require(:movie).permit(:reserved)
+        params.require(:movie).permit(:reserved, :user_id)
       end
 
   end

@@ -7,7 +7,7 @@ function UserController(Auth, $scope, UserService) {
       $scope.user = user;
 
     });
-    
+
   $scope.editUser = function(data){
     UserService
       .edit(data)
