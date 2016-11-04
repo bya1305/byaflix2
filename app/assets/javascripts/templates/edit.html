@@ -1,19 +1,22 @@
 <div class="container help_div">
   <h1>Edit</h1>
-  <form name="form" ng-submit="editUser()">
+  <form name="form" ng-submit="ctrl.editUser()">
     <label>Username: </label>
-    <input name="username" type="text" ng-model="user.username"> <br>
+    <input name="username" type="text" ng-model="ctrl.user.username" required="required"> <br>
 
-    <!-- <div ng-messages="form.username.$error" ng-if="form.username.$touched">
-      <div ng-message="required">Username is required</div>
-    </div> -->
+    <div ng-if="form.username.$touched && form.username.$error.required">
+      Username is required
+    </div>
 
     <label>Email: </label>
-    <input name="email" type="email" ng-model="user.email"> <br>
+    <input name="email" type="email" required="required" ng-model="ctrl.user.email"> <br>
 
-    <!-- <div ng-messages="form.email.$error" ng-if="form.email.$touched">
-      <div ng-message="required">Email is required</div>
-    </div> -->
+    <div ng-if="form.email.$touched && form.email.$error.required">
+      Email is required
+    </div>
+    <div ng-if="form.email.$touched && form.email.$error.email">
+      A valid email is required
+    </div>
 
 
     <input type="submit" value="Submit Changes">

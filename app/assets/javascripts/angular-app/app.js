@@ -28,12 +28,12 @@ angular
       .state('user', {
         url: '/user',
         templateUrl: 'user.html',
-        controller: 'UserController'
+        controller: 'UserController as ctrl'
       })
       .state('edit', {
         url: '/user/edit',
         templateUrl: 'edit.html',
-        controller: 'UserController'
+        controller: 'UserController as ctrl'
       });
       $urlRouterProvider.otherwise('/movies');
   });

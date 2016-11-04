@@ -1,6 +1,6 @@
 ActiveAdmin.register Movie do
 
-  permit_params :title,:year,:checked_out,:reserved,:description,:img_url,:rated,:runtime,:actors,:imdb_rating, genre_ids: []
+  permit_params :title,:year,:checked_out,:reserved,:description,:img_url,:rated,:runtime,:actors,:user_id,:imdb_rating, genre_ids: []
 
   form do |f|
     f.semantic_errors
@@ -16,6 +16,7 @@ ActiveAdmin.register Movie do
         f.input :actors
         f.input :imdb_rating
         f.input :genres, :as => :check_boxes
+        f.input :user_id
       end
       f.actions
     end

@@ -1,16 +1,21 @@
 
 <div class="container help_div">
-  <h1>Welcome, {{user.username}}</h1> <br>
+  <h1>Welcome, {{ctrl.user.username}}</h1> <br>
   <hr><br><br>
   <div class="topic">
   <h2>User Settings</h2><br><br>
   </div>
   <div class="topicinfo">
-  <h3 class="ust">Username: {{user.username}} </h3>
-  <h3 class="ust">Email: {{user.email}}</h3>
+  <h3 class="ust">Username: {{ctrl.user.username}} </h3>
+  <h3 class="ust">Email: {{ctrl.user.email}}</h3>
   <a ui-sref="edit" href="#">Edit info</a>
-
   </div>
   <br><br>
   <hr style="clear:both">
+  <!-- <div class="moviesout">
+    <h2>Movies You Have Out</h2>
+    <div ng-repeat="movie in ctrl.movies">
+      {{movie.user}}
+    </div>
+  </div> -->
 </div>

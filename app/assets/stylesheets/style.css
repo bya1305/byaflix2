@@ -1,5 +1,5 @@
 .container-signup {
-  background-image: url(movie-collage3.jpg);
+  background-image: url('https://s3-us-west-2.amazonaws.com/j-flix-images/movie-collage3.jpg');
   background-position: center;
   background-size: contain;
   width: 100vw;
@@ -169,5 +169,14 @@ hr {
   float:left;
   text-align: left;
   margin-bottom: 5%;
-
+}
+.question {
+  font-size: 2em;
+  text-decoration: underline;
+  color: red;
+  font-weight: bold;
+}
+.answer {
+  font-size: 1.2em;
+  font-weight: bold;
 }

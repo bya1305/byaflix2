@@ -15,6 +15,6 @@
 
 <%- if devise_mapping.omniauthable? %>
   <%- resource_class.omniauth_providers.each do |provider| %>
-    <button id="facebook_login"><%= image_tag("fb.png", :alt => "fb symbol") %><%= link_to "Continue with #{OmniAuth::Utils.camelize(provider)}", omniauth_authorize_path(resource_name, provider) %></button><br />
+    <button id="facebook_login"><%= image_tag("https://s3-us-west-2.amazonaws.com/j-flix-images/fb.png", :alt => "fb symbol") %><%= link_to "Continue with #{OmniAuth::Utils.camelize(provider)}", omniauth_authorize_path(resource_name, provider) %></button><br />
   <% end -%>
 <% end -%>

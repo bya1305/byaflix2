@@ -5,8 +5,8 @@ function UserService($http, $stateParams, Auth) {
     vm.user = user;
   })
   this.edit = function(user) {
-    console.log(vm.user.id)
-    return $http.patch('/api/users/' + vm.user.id, user);
+    
+    return $http.put('/api/users/' + vm.user.id + '.json', user);
   }
 
 }
