@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="app">
 <head>
   <title>J-Flix</title>
 
@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
   <%= csrf_meta_tags %>
 </head>
-<body ng-app="app" ng-click="search.title=''">
+<body ng-click="search.title=''">
   <% if current_user %>
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
